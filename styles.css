@@ -1,0 +1,244 @@
+/* Reset dan styling dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  background-color: #f4f9ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #023e8a;
+}
+
+main {
+  padding: 40px 10%;
+}
+
+.hero {
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+#btnExplore {
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: #00b4d8;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btnExplore:hover {
+  background-color: #0077b6;
+}
+
+.intro {
+  margin-top: 50px;
+}
+
+.intro h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #0077b6;
+}
+
+.intro ul {
+  list-style: disc inside;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+footer {
+  background-color: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 15px 10%;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+.destination-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.destination-list article {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.destination-list article:hover {
+  transform: translateY(-5px);
+}
+
+.destination-list img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.destination-list h3 {
+  margin: 15px;
+  color: #0077b6;
+}
+
+.destination-list p {
+  margin: 0 15px 15px;
+  font-size: 1rem;
+  color: #444;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.video-container video {
+  max-width: 800px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+.testimonial-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-left: 5px solid #0077b6;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  color: #333;
+}
+
+.testimonial-card h4 {
+  margin-top: 10px;
+  font-weight: normal;
+  color: #0077b6;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+  max-width: 500px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005f8f;
+}
+
+.contact-info {
+  margin-top: 40px;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
